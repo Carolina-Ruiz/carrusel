@@ -1,11 +1,18 @@
 $(document).ready(function(){	
-	$("#slider").easySlider({
-		auto: true,
-		continuous: true,
-		nextId: "slider1next",
-		prevId: "slider1prev"
-	});
-	$("#slider2").easySlider({ 
-		numeric: true
-	});
+	/*llamar al ul y li*/
+	$('.fotos').hiden();
+	/*llama solo q se vea la primera*/
+	$('.fotos:first').show();
+	$('.fa-circle:first').css({'color': '#A50315'});
+	$('.fa-circle').click(paginacion);
+
+	function paginacion(){
+	var circuloID = $(this).index() + 1;
+    console.log(circuloID);
+    $('.fotos').hide();
+    $('#img' + circuloID).fadeIn(500);
+    $('.fa-circle').css({'color': '#FFF'});
+    $(this).css({'color': '#A50315'});
+  }
+
 });

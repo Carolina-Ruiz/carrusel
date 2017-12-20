@@ -3,25 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Carrusel</title>
+	<title>Slider Jquery</title>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	
 <h1> Kikazaru (no oye), Iwazaru (no habla) y Mizaru (no ve) </h1>
-    <div id="slider">
-        <a href="#" class="control_next">></a>
-        <a href="#" class="control_prev"><</a>
+    <div id="slide">
+        <!--<a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>-->
+       
         <ul>
          
-            <li class="uno"></li>
+            <li id="uno" class="uno">
+            	<img src="img/1.jpeg">
+            </li>
             
-            <li class="dos"></li>
+            <li id="dos" class="foto">
+            	<img src="img/2.jpeg">
+            </li>
 
-            <li class="tres"></li>
+            <li id="tres" class="foto">
+            	<img src="img/3.jpeg">
+            </li>
         </ul>  
+        <ol class="paginacion">
+        	<li><span class="fa fa-circle-o"></span></li>
+        </ol>
+        <ol class="paginacion">
+        	<li><span class="fa fa-circle-o"></span></li>
+        </ol>
+        <ol class="paginacion">
+        	<li><span class="fa fa-circle-o"></span></li>
+        </ol>
     </div> 
+    <div class="left">
+    	<span class="fa fa-chevron-left"></span>
+    </div>
+    <div class="right">
+    	<span class="fa fa-chevron-right"></span>
+    </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script src="assets/js/app.js"></script>
    	
 </body>
